@@ -1,4 +1,5 @@
 node_modules/
 build_webpack/
 build_storybook/
+safe-contracts/
 .DS_Store
