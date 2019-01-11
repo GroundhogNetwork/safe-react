@@ -60,8 +60,6 @@ export default class Identicon extends React.PureComponent<Props> {
   render() {
     const style = this.getStyleFrom(this.props.diameter)
 
-    return (
-      <div style={style} ref={this.identicon} />
-    )
+    return <div style={style} ref={this.identicon} />
   }
 }

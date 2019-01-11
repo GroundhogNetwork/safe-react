@@ -6,7 +6,7 @@ import styles from './index.scss'
 
 const cx = classNames.bind(styles)
 
-type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4';
+type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4'
 
 type Props = {
   align?: 'left' | 'center' | 'right',
@@ -23,14 +23,7 @@ class Heading extends React.PureComponent<Props> {
       align, tag, truncate, margin, color, children, ...props
     } = this.props
 
-    const className = cx(
-      'heading',
-      align,
-      tag,
-      margin ? capitalize(margin, 'margin') : undefined,
-      color,
-      { truncate },
-    )
+    const className = cx('heading', align, tag, margin ? capitalize(margin, 'margin') : undefined, color, { truncate })
 
     return React.createElement(tag, { ...props, className }, children)
   }

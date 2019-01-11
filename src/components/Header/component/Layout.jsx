@@ -14,7 +14,7 @@ import Spacer from '~/components/Spacer'
 import { border, sm, md } from '~/theme/variables'
 import Provider from './Provider'
 
-const logo = require('../assets/gnosis-safe-logo.svg')
+const logo = require('../assets/groundhog-text.png')
 
 type Props = Open & {
   classes: Object,
@@ -38,7 +38,7 @@ const styles = () => ({
   },
   logo: {
     padding: `${sm} ${md}`,
-    flexBasis: '95px',
+    // flexBasis: '95px',
     flexGrow: 0,
   },
 })
@@ -49,7 +49,7 @@ const Layout = openHoc(({
   <React.Fragment>
     <Row className={classes.summary}>
       <Col start="xs" middle="xs" className={classes.logo}>
-        <Img src={logo} height={32} alt="Gnosis Team Safe" />
+        <Img src={logo} height={32} alt="Groundhog Safe" />
       </Col>
       <Divider />
       <Spacer />

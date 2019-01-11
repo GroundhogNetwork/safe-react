@@ -46,7 +46,7 @@ export const LoadSafe = ({ size, provider }: SafeProps) => (
     to={LOAD_ADDRESS}
     variant="outlined"
     size={size || 'medium'}
-    color="primary"
+    color="secondary"
     disabled={!provider}
     minWidth={240}
   >
@@ -62,7 +62,7 @@ const Welcome = ({ provider }: Props) => (
       Welcome to the Gnosis <br />
       Safe Team Edition
     </Heading>
-    <Heading tag="h4" align="center" margin="xl">
+    <Heading tag="h4" align="center" margin="xl" color="white">
       The Gnosis Safe Team Edition is geared towards teams managing <br />
       shared crypto funds. It is an improvement of the existing Gnosis <br />
       MultiSig wallet with redesigned smart contracts, cheaper setup and <br />
